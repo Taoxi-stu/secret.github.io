@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/dmaku.css" />
+    <title>vueApp</title>
+    <style>
+        #tyqh{
+            position: absolute;
+            width: 100px
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dmaku.js"></script>
+    <script type="text/javascript" src="js/picmove.js"></script>
+    
+    <canvas id="c"></canvas>
+    <img id='tyqh' src="image/tyqh.jpg" alt="angle_藤原千花">
+    <div class="container">
+        
+        <button id = 'btn1'>鼠标风格切换</button>
+        <button id='btn2' onclick="isFollow()">取消图片跟随</button>
+    </div>
+    <script>
+        document.getElementById('c').addEventListener('mousemove',picFollow);
+    </script>
+</body>
+
+</html>
