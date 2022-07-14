@@ -5,30 +5,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/dmaku.css" />
-    <title>vueApp</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>美妙的js学习之路</title>
     <style>
-        #tyqh{
-            position: absolute;
-            width: 100px
-        }
     </style>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dmaku.js"></script>
+    <script type="text/javascript" src="js/picsShow.js"></script>
+   
 </head>
 
 <body>
-    <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/dmaku.js"></script>
-    <script type="text/javascript" src="js/picmove.js"></script>
-    
-    <canvas id="c"></canvas>
-    <img id='tyqh' src="image/tyqh.jpg" alt="angle_藤原千花">
-    <div class="container">
-        
-        <button id = 'btn1'>鼠标风格切换</button>
-        <button id='btn2' onclick="isFollow()">取消图片跟随</button>
+    <canvas id="c" ></canvas>
+    <img id='tyqh' src="image/tyqh.jpg" alt="angle_藤原千花" >
+
+    <div class="container" style="margin-top:100px"> 
+        <img src="image/a1.png" alt="1" /> 
+        <img src="image/a2.png" alt="2" /> 
+        <img src="image/a3.png" alt="3" /> 
+        <img src="image/a4.png" alt="4" /> 
+        <img src="image/a5.png" alt="5" /> 
     </div>
+    <div class="name">
+        <p>No 1</p>
+    </div>
+
+    <div class="foot">
+        <button id = 'btn1'>鼠标风格</button>
+        <button id = 'btn2' onclick="isFollow()">图片跟随</button>
+    </div>
+
+    <script type="text/javascript" src="js/picmove.js"></script>
     <script>
-        document.getElementById('c').addEventListener('mousemove',picFollow);
+        // picChange();
+        var imgTyqh = document.getElementById('c')
+        imgTyqh.addEventListener('mousemove',picFollow);
     </script>
 </body>
 
