@@ -2,21 +2,21 @@
 		var canvas = document.getElementById("c");
 		var ctx = canvas.getContext("2d");
 		var c = $("#c");
+		// setInterval(()=>{
+		// 	var canvas = document.getElementById("c");
+		// 	canvas.width=canvas.width;
+		// },200);
 		var x,y,w,h,cx,cy,l;
 		var y = [];
 		var b = {
 			n:100,
 			c:false,    //  颜色  如果是false 则是随机渐变颜色
-			bc:'#000000',   //  背景颜色
+			bc:'transparent',   //  背景颜色
 			r:0.9, 
 			o:0.05,
 			a:1,
 			s:20,
 		}
-		var bx = 0,by = 0,vx = 0,vy = 0;
-		var td = 0;
-		var p = 0;
-		var hs = 0;
 		re();
 		var color,color2;
 		if(b.c){
@@ -78,6 +78,10 @@
 				}
 			}
 			window.requestAnimationFrame(begin);
+			setTimeout(()=>{
+				var canvas = document.getElementById("c");
+				canvas.width=canvas.width;
+			},200);
 		}
 		function re(){
 			w = window.innerWidth;
@@ -92,27 +96,11 @@
 			cy = e.pageY - 0.05*canvas.height - c.offset().top;
 			if(tp){
 				y.push({x:cx,y:cy,r:b.r,o:1,v:0});
+				console.log(y);
 			}else {
 				y.push({x:cx+((Math.random()-.5)*30),y:cy+((Math.random()-.5)*30),o:1,wx:cx,wy:cy});
 			}
 		};
-		/*c.mousedown(function(){
-			c.on('mousemove',function(e){
-				cx = e.pageX-c.offset().left;
-				cy = e.pageY-c.offset().top;
-				y.push({x:cx,y:cy,r:b.r,o:1});
-			});
-			c.on('mouseup',function(){
-				c.off('mouseup');
-				c.off('mousemove');
-				c.off('moseleave');
-			});
-			c.on('mouseleave',function(){
-				c.off('mouseup');
-				c.off('mousemove');
-				c.off('moseleave');
-			});
-		});*/
 		$("#btn1").click(function(){
 			tp = !tp;	
 			y=[];

@@ -12,7 +12,33 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/dmaku.js"></script>
     <script type="text/javascript" src="js/picsShow.js"></script>
-   
+    <!-- 必要样式 -->
+    <link href="css/mislider.css" rel="stylesheet">
+    <link href="css/mislider-skin-cameo.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/mislider.js"></script>
+    <script type="text/javascript">
+    jQuery(function ($) {
+        var slider = $('.mis-stage').miSlider({
+            //  The height of the stage in px. Options: false or positive integer. false = height is calculated using maximum slide heights. Default: false
+            stageHeight: 380,
+            //  Number of slides visible at one time. Options: false or positive integer. false = Fit as many as possible.  Default: 1
+            slidesOnStage: false,
+            //  The location of the current slide on the stage. Options: 'left', 'right', 'center'. Defualt: 'left'
+            slidePosition: 'center',
+            //  The slide to start on. Options: 'beg', 'mid', 'end' or slide number starting at 1 - '1','2','3', etc. Defualt: 'beg'
+            slideStart: 'mid',
+            //  The relative percentage scaling factor of the current slide - other slides are scaled down. Options: positive number 100 or higher. 100 = No scaling. Defualt: 100
+            slideScaling: 150,
+            //  The vertical offset of the slide center as a percentage of slide height. Options:  positive or negative number. Neg value = up. Pos value = down. 0 = No offset. Default: 0
+            offsetV: -5,
+            //  Center slide contents vertically - Boolean. Default: false
+            centerV: true,
+            //  Opacity of the prev and next button navigation when not transitioning. Options: Number between 0 and 1. 0 (transparent) - 1 (opaque). Default: .5
+            navButtonsOpacity: 1
+        });
+    });
+    </script>
 </head>
 
 <body>
@@ -20,7 +46,7 @@
     <img id='tyqh' src="image/tyqh.jpg" alt="angle_藤原千花" >
 
 
-    <div class="pics6">
+    <!-- <div class="pics6">
         <div id="status4_pics">
             <ul class="pics6_status4">
                 <li>
@@ -45,11 +71,73 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
-    <div class="name">
-        <p>No 1</p>
-    </div>
+    <div class="mis-stage">
+		<!-- The element to select and apply miSlider to - the class is optional -->
+		<ol class="mis-slider">
+			<!-- The slider element - the class is optional -->
+			<li class="mis-slide">
+				<!-- A slide element - the class is optional -->
+				<a href="#" class="mis-container">
+					<!-- A slide container - this element is optional, if absent the plugin adds it automatically -->
+					<figure>
+						<!-- Slide content - whatever you want -->
+						<img src="image/garden01.jpg" alt="Pink Water Lillies">
+						<figcaption>Pink Water Lillies</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="mis-slide">
+				<a href="#" class="mis-container">
+					<figure>
+						<img src="image/garden02.jpg" alt="Pond with Lillies">
+						<figcaption>Pond with Lillies</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="mis-slide">
+				<a href="#" class="mis-container">
+					<figure>
+						<img src="image/garden03.jpg" alt="Hidden Pond">
+						<figcaption>Hidden Pond</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="mis-slide">
+				<a href="#" class="mis-container">
+					<figure>
+						<img src="image/garden04.jpg" alt="Shrine">
+						<figcaption>Shrine</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="mis-slide">
+				<a href="#" class="mis-container">
+					<figure>
+						<img src="image/garden05.jpg" alt="White Water Lillies">
+						<figcaption>White Water Lillies</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="mis-slide">
+				<a href="#" class="mis-container">
+					<figure>
+						<img src="image/garden06.jpg" alt="Garden Walkway">
+						<figcaption>Garden Walkway</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="mis-slide">
+				<a href="#" class="mis-container">
+					<figure>
+						<img src="image/garden07.jpg" alt="Lilly with Bee">
+						<figcaption>Lilly with Bee</figcaption>
+					</figure>
+				</a>
+			</li>
+		</ol>
+	</div>
 
     <div class="foot">
         <button id = 'btn1'>鼠标风格</button>
