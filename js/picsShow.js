@@ -23,9 +23,11 @@ $(function(){
 	
 	$(".container img").hover(function(){
 			stopPlay();
-	},function(){
-			interval = setTimeout(auto,5000);
-	})
+	},
+    // function(){
+	// 		interval = setTimeout(auto,5000);
+	// }
+    )
 	
 	function stopPlay(){
 		clearTimeout(interval)

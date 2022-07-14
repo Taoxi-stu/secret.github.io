@@ -85,17 +85,17 @@
 			canvas.width = w;
 			canvas.height = 0.9*h;
 			cx = w/2;
-			cy = h/2;
+			cy = 0.55*h;
 		};
-		c.mousemove(function(e){
+		document.onmousemove = function(e){
 			cx = e.pageX-c.offset().left;
-			cy = e.pageY-c.offset().top;
+			cy = e.pageY - 0.05*canvas.height - c.offset().top;
 			if(tp){
 				y.push({x:cx,y:cy,r:b.r,o:1,v:0});
 			}else {
 				y.push({x:cx+((Math.random()-.5)*30),y:cy+((Math.random()-.5)*30),o:1,wx:cx,wy:cy});
 			}
-		});
+		};
 		/*c.mousedown(function(){
 			c.on('mousemove',function(e){
 				cx = e.pageX-c.offset().left;
@@ -114,8 +114,7 @@
 			});
 		});*/
 		$("#btn1").click(function(){
-			tp = !tp;
-			console.log(tp);			
+			tp = !tp;	
 			y=[];
 		});
 		(function() {

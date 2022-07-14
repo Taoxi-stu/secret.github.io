@@ -19,27 +19,47 @@
     <canvas id="c" ></canvas>
     <img id='tyqh' src="image/tyqh.jpg" alt="angle_藤原千花" >
 
-    <div class="container" style="margin-top:100px"> 
-        <img src="image/a1.png" alt="1" /> 
-        <img src="image/a2.png" alt="2" /> 
-        <img src="image/a3.png" alt="3" /> 
-        <img src="image/a4.png" alt="4" /> 
-        <img src="image/a5.png" alt="5" /> 
+
+    <div class="pics6">
+        <div id="status4_pics">
+            <ul class="pics6_status4">
+                <li>
+                    <img class="status4-pic" src="image/a1.png">
+                    <div>11111</div>
+                    <div>22222</div>
+                </li>
+                <li>
+                    <img class="status4-pic" src="image/a2.png">
+                    <div>11111</div>
+                    <div>22222</div>
+                </li>
+                <li>
+                    <img class="status4-pic" src="image/a3.png">
+                    <div>11111</div>
+                    <div>22222</div>
+                </li>
+                <li>
+                    <img class="status4-pic" src="image/a4.png">
+                    <div>11111</div>
+                    <div>22222</div>
+                </li>
+            </ul>
+        </div>
     </div>
+
     <div class="name">
         <p>No 1</p>
     </div>
 
     <div class="foot">
         <button id = 'btn1'>鼠标风格</button>
-        <button id = 'btn2' onclick="isFollow()">图片跟随</button>
+        <button id = 'btn2' onclick="isFollow()">千花跟随</button>
     </div>
 
     <script type="text/javascript" src="js/picmove.js"></script>
     <script>
         // picChange();
-        var imgTyqh = document.getElementById('c')
-        imgTyqh.addEventListener('mousemove',picFollow);
+        document.addEventListener('mousemove',picFollow);
     </script>
 </body>
 

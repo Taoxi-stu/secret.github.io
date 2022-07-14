@@ -40,13 +40,33 @@ canvas {
     position: absolute;
     width: 70px;
     top: 80%;
+    z-index: 5;
 }
 
-.container {
-    background: #FF9;
-    width: 420px;
-    height: 300px;
-    margin: 0px auto;
+.pics6 {
+    margin: 30px;
+}
+.pics6 .pics6_status4{
+    display: flex;
+    display: -webkit-flex;
+}
+.pics6 .pics6_status4 li{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    padding: 4px; 
+}
+.pics6 .pics6_status4 li .status4-pic{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* .container {
+    background: #fff;
+    width: 20%;
+    height: 40%;
+    margin:0;
     cursor: pointer;
     overflow: hidden;
     box-shadow: 6px 4px 5px hsla(0, 0%, 59%, .2);
@@ -56,13 +76,15 @@ canvas {
 .container img {
     background: #FFF;
     display: block;
-    width: 400px;
-    height: 280px;
-    padding: 10px;
-    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+   
+    float:none;
     -webkit-transition: 0.7s;
     -moz-transition: 0.7s;
     -o-transition: 0.7s;
+    z-index: 2;
 }
 
 .zoom {
@@ -71,6 +93,7 @@ canvas {
     -webkit-transform: scale(1.1) translate(-150px, -120px) skew(15deg, -30deg);
     -ms-transform: scale(1.1) translate(-150px, -120px) skew(15deg, -30deg);
     -o-transform: scale(1.1) translate(-150px, -120px) skew(15deg, -30deg);
+    z-index: 3;
 }
 
 .name {
@@ -80,7 +103,6 @@ canvas {
     margin: 15px auto;
     cursor: pointer;
     box-shadow: 2px 2px 5px #969696;
-    /*opera或ie9*/
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -95,4 +117,4 @@ canvas {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-}
+} */
