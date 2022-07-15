@@ -38,7 +38,7 @@ var MiSlider = function( stageEl, options ) {
 		speed: 700,
 		// slide pause time between transitions in milliseconds.
 		// Options: false, positive integer. false = Autoplay off.
-		pause: 4000,
+		pause: 5000,
 		// The number of slides to increment with Autoplay and Nav Buttons.
 		// Options: positive or negative integer. Positive integer = Slide left.
 		// Negative integer = Slide right.

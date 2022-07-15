@@ -2,14 +2,16 @@
 /*  Cameo Skin CSS ========================================= */
 
 .mis-stage {
-    background-color: #fff;
+    background-color: rgb(65, 164, 156);
+    margin:10px
+    pad
 }
     .mis-slider {
         /*  Slider element does not need to be a specific height
             Here we use it to create a stylish bar behind slides */
         margin-top: 138px;
         height: 80px;
-        background-color: #eee;
+        background-color: rgba(56, 18, 60, 0.844);
     }
         .mis-slider li a {
             text-decoration: none;

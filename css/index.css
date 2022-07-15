@@ -4,10 +4,16 @@
 }
 
 body {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    background: #270b0b;
+    background-repeat:repeat-y;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    /* overflow: hidden; */
 }
 
 button {
@@ -23,14 +29,13 @@ canvas {
     position:absolute;
     width: 100%;
     height: 100%;
-    z-index:3
+    z-index:1
 }
 
 .foot {
-    background-color: #F1F1F1;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 50px;
     bottom: 0 ;
@@ -43,4 +48,19 @@ canvas {
     width: 70px;
     top: 80%;
     z-index: 5;
+}
+.discription{
+    background-color: rgb(65, 164, 156);
+    margin: 10px auto ;
+    padding: 10px;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    /* align-items: center; */
+    -ms-flex-align: center;
+    justify-content: center;
+    text-align: center;
+}
+.discription p{
+    color: rgb(48, 19, 216);
 }

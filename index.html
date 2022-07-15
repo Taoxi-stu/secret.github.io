@@ -41,7 +41,7 @@
     </script>
 </head>
 
-<body>
+<body >
     <canvas id="c" ></canvas>
     <img id='tyqh' src="image/tyqh.jpg" alt="angle_藤原千花" >
 
@@ -73,7 +73,7 @@
         </div>
     </div> -->
 
-    <div class="mis-stage">
+    <div class="mis-stage" >
 		<!-- The element to select and apply miSlider to - the class is optional -->
 		<ol class="mis-slider">
 			<!-- The slider element - the class is optional -->
@@ -138,16 +138,24 @@
 			</li>
 		</ol>
 	</div>
+    <div class="discription">
+        <p> 苦苦挖库尅米亚思密达4444444444444444444444444444444
+            5555555555555555<bar></bar>
+            
+        5555555555555555555555555\r\n /r/n </p>
+    </div>
 
-    <div class="foot">
+    <div class="foot" style="background: transparent;">
         <button id = 'btn1'>鼠标风格</button>
         <button id = 'btn2' onclick="isFollow()">千花跟随</button>
     </div>
+    <div class="footVoild" style="width:100%;"></div>
 
     <script type="text/javascript" src="js/picmove.js"></script>
     <script>
         // picChange();
         document.addEventListener('mousemove',picFollow);
+        $('.footVoild')[0].style.height = String($('.foot')[0].offsetHeight + 'px')
     </script>
 </body>
 

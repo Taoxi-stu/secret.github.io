@@ -80,7 +80,7 @@
 			window.requestAnimationFrame(begin);
 			setTimeout(()=>{
 				var canvas = document.getElementById("c");
-				canvas.width=canvas.width;
+				canvas.height = document.body.offsetHeight;
 			},200);
 		}
 		function re(){
@@ -96,7 +96,6 @@
 			cy = e.pageY - 0.05*canvas.height - c.offset().top;
 			if(tp){
 				y.push({x:cx,y:cy,r:b.r,o:1,v:0});
-				console.log(y);
 			}else {
 				y.push({x:cx+((Math.random()-.5)*30),y:cy+((Math.random()-.5)*30),o:1,wx:cx,wy:cy});
 			}
